@@ -1,11 +1,11 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.fitzyracing1/system-on-an-agent",
+  "name": "io.github.fitzyracing1/system-on-an-agent-plugin",
   "title": "System on an Agent",
   "description": "Planner, memory, skills, and file and echo connectors in one agent, as a local MCP server.",
   "websiteUrl": "https://fitzyracing1.github.io/system-on-an-agent/",
   "repository": {
-    "url": "https://github.com/fitzyracing1/system-on-an-agent",
+    "url": "https://github.com/fitzyracing1/system-on-an-agent-plugin",
     "source": "github"
   },
   "version": "0.1.0",

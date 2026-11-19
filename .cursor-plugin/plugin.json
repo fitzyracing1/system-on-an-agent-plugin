@@ -7,7 +7,7 @@
     "name": "Joshua Almeida"
   },
   "homepage": "https://fitzyracing1.github.io/system-on-an-agent/",
-  "repository": "https://github.com/fitzyracing1/system-on-an-agent",
+  "repository": "https://github.com/fitzyracing1/system-on-an-agent-plugin",
   "license": "MIT",
   "keywords": ["agent", "planner", "memory", "skills", "connectors", "mcp"],
   "logo": "assets/logo.svg",

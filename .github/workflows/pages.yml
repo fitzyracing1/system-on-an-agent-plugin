@@ -1,10 +1,9 @@
 name: Deploy site
 
+# The site is published from the upstream repository
+# (https://github.com/fitzyracing1/system-on-an-agent). In this plugin repository
+# the workflow only runs by hand, so it never fails while GitHub Pages is off.
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

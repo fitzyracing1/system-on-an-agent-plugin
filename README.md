@@ -1,6 +1,8 @@
-# System on an Agent
+# System on an Agent: plugin edition
 
-<!-- mcp-name: io.github.fitzyracing1/system-on-an-agent -->
+<!-- mcp-name: io.github.fitzyracing1/system-on-an-agent-plugin -->
+
+> This is the **plugin / MCP-server edition** of [System on an Agent](https://github.com/fitzyracing1/system-on-an-agent). It carries the full history of that repository plus a stdio MCP server, a Cursor plugin manifest, and MCP Registry metadata, so it can be submitted to the xAI plugin marketplace.
 
 A system on a chip puts a CPU, memory, I/O, and a bus on one piece of silicon. A **system on an agent** puts the same parts into one agent:
 
@@ -94,7 +96,7 @@ Run it straight from GitHub with [uv](https://docs.astral.sh/uv/):
       "command": "uvx",
       "args": [
         "--from",
-        "git+https://github.com/fitzyracing1/system-on-an-agent",
+        "git+https://github.com/fitzyracing1/system-on-an-agent-plugin",
         "system-on-an-agent",
         "mcp"
       ]
@@ -106,7 +108,7 @@ Run it straight from GitHub with [uv](https://docs.astral.sh/uv/):
 Or install it into a Python 3.10+ environment and point the client at the script:
 
 ```bash
-python -m pip install "git+https://github.com/fitzyracing1/system-on-an-agent"
+python -m pip install "git+https://github.com/fitzyracing1/system-on-an-agent-plugin"
 ```
 
 ```json
@@ -132,7 +134,7 @@ pytest                              # tests/test_mcp_client.py starts the server
 
 ## Submitting to the xAI marketplace
 
-The [Submit a plugin](https://x.ai/bot/marketplace/submit-a-plugin) form lists plugins for Grok Bot, Cursor, and Grok (coming soon). It takes an MCP server URL or a **public GitHub repository**, which this repository is. The form does not publish a manifest spec, so this repo follows the Cursor plugin format (`.cursor-plugin/plugin.json` + `mcp.json`) and MCP Registry `server.json` conventions. That is an assumption to confirm during review.
+The [Submit a plugin](https://x.ai/bot/marketplace/submit-a-plugin) form lists plugins for Grok Bot, Cursor, and Grok (coming soon). It takes an MCP server URL or a **public GitHub repository**, which this repository is (submit this plugin repository, not the upstream one). The form does not publish a manifest spec, so this repo follows the Cursor plugin format (`.cursor-plugin/plugin.json` + `mcp.json`) and MCP Registry `server.json` conventions. That is an assumption to confirm during review.
 
 Done in the repo:
 
@@ -147,9 +149,9 @@ Needs a person:
 - [ ] **Work email.** The form asks for a work email, so a personal Gmail may not pass review.
 - [ ] **Organization name** and a unique lowercase **organization handle** (no spaces)
 - [ ] **Website URL** (optional), e.g. `https://fitzyracing1.github.io/system-on-an-agent/`
-- [ ] **Logotype URL**: a 1:1 SVG or PNG with a background plate. After this branch merges: `https://raw.githubusercontent.com/fitzyracing1/system-on-an-agent/main/assets/logo.png`
+- [ ] **Logotype URL**: a 1:1 SVG or PNG with a background plate. `https://raw.githubusercontent.com/fitzyracing1/system-on-an-agent-plugin/main/assets/logo.png`
 - [ ] Pick where to be listed: **Grok Bot**, **Cursor**, and/or **Grok** (coming soon)
-- [ ] **MCP Server URL or Public GitHub Repository**: `https://github.com/fitzyracing1/system-on-an-agent`
+- [ ] **MCP Server URL or Public GitHub Repository**: `https://github.com/fitzyracing1/system-on-an-agent-plugin`
 - [ ] **Brief description** and **testing instructions** (for example: add the `mcp.json` entry above, call `list_skills`, then `run_goal` with `echo hello then remember hello was said`)
 - [ ] Test the plugin locally and in-app, then tick the box confirming it works
 - [ ] Read and accept the [Publisher Terms](https://cursor.com/marketplace-publisher-terms)

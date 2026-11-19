@@ -30,8 +30,9 @@ soa = "soa.cli:main"
 system-on-an-agent = "soa.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/fitzyracing1/system-on-an-agent"
-Issues = "https://github.com/fitzyracing1/system-on-an-agent/issues"
+Homepage = "https://github.com/fitzyracing1/system-on-an-agent-plugin"
+Upstream = "https://github.com/fitzyracing1/system-on-an-agent"
+Issues = "https://github.com/fitzyracing1/system-on-an-agent-plugin/issues"
 
 [project.entry-points."soa.addons"]
 

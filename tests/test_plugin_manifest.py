@@ -63,7 +63,7 @@ def test_mcp_json_launches_the_mcp_subcommand():
 
 def test_server_json_follows_registry_conventions():
     server = load("server.json")
-    assert server["name"] == "io.github.fitzyracing1/system-on-an-agent"
+    assert server["name"] == "io.github.fitzyracing1/system-on-an-agent-plugin"
     assert len(server["description"]) <= 100
     package = server["packages"][0]
     assert package["registryType"] == "pypi"
